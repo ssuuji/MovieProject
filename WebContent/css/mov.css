@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+
+/* service css */
+.gd1{
+font-size: 22px;
+font-weight: bold;
+}
+
+.gd2{
+font-size: 15px;
+font-weight: 600;
+color: red
+
+}
+
+.gd3{
+font-size: 17px;
+font-weight: 700;
+}
+
+.gd4{
+font-size: 19px;
+font-weight: 700;
+color: #3232FF;
+}
+
+
+h4{
+font-weight: lighter;
+font-size: 12px;
+}
+
+
+.red1{
+	font-size: 17px;
+	color: red;
+	
+}
+.tab1{
+	padding-left: 15px;
+}
+
+.pre1{
+	
+ 	max-width: 1000px;
+ 	white-space: pre-wrap;
+  	word-wrap: break-word;
+}
+
+.top{
+	display:scroll;
+	position:fixed;
+	bottom:50%;
+	right:3%;
+}
+
+.privet{
+	
+	background-color: white;
+}
+
+
+
+/* ----------------영화관 상세페이지 css ------------------ */
+
+header{
+position: fixed;
+top:0;left:0;
+width:100%;
+}
+section{
+padding-top: 150px;
+padding-bottom: 150px;
+}
+#gr1{
+font-size:50px;
+
+}
+
+#gangtab{
+margin: auto;
+}
+
+.mbtn1 {
+  
+  padding: 0;
+  cursor: pointer;
+  vertical-align: middle;
+  border: none;
+  font-size:20px;
+
+
+}
+
+.mbtn2 {
+
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  vertical-align: middle;
+  padding-bottom: 5px;
+
+}
+
+#movieshow{
+padding-top: 15px;
+}
+
+/* 지하철 호선 */
+.blue1{
+	font-size: 15px;
+	font-weight: 600;
+	color: blue;
+}
+
+.purple1{
+	font-size: 15px;
+	font-weight: 600;
+	color: purple;
+
+}
+.orange1{
+	font-size: 15px;
+	font-weight: 600;
+	color:orange;
+}
+.green1{
+	font-size: 15px;
+	font-weight: 600;
+	color: green;
+}
+
+.olive1{
+	font-size: 15px;
+	font-weight: 600;
+	color: olive;
+}
+
+.gold1{
+	font-size: 15px;
+	font-weight: 600;
+	color: #F0CB85;
+}
+

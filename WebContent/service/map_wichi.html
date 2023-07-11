@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>좌표 얻어오기</title>
+</head>
+<body>
+<div id="map" style="width:100%;height:600px;"></div>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=acbd5cd1de590a7f3dd3aa911f0fe026"></script>
+<script>
+var mapContainer = document.getElementById('map'); // 지도를 표시할 div 
+var mapOption = { 
+    center: new kakao.maps.LatLng(37.538428044608736, 127.07068332079628), // 지도의 중심좌표
+    level: 3 // 지도의 확대 레벨
+};
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+var markerPosition = new kakao.maps.LatLng(37.538428044608736, 127.07068332079628); // 마커가 표시될 위치
+
+var marker = new kakao.maps.Marker({
+    position: markerPosition,
+    map: map
+});
+
+// 지도 클릭 이벤트 리스너 등록
+kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
+    // 클릭한 위치의 위도와 경도를 얻어옵니다
+    var latlng = mouseEvent.latLng;
+
+    // 위도와 경도를 화면에 표시합니다
+    var resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = '클릭한 위치의 위도: ' + latlng.getLat() + '<br>클릭한 위치의 경도: ' + latlng.getLng();
+
+    // 마커를 클릭한 위치로 이동시킵니다
+    marker.setPosition(latlng);
+});
+</script>
+
+<div id="result"></div>
+</body>
+</html>

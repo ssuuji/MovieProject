@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+section {
+	padding-top: 80px;
+	padding-bottom: 100px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2rem;
+	flex-direction: column;
+	min-height: 100hv;
+}
+
+.video-frame:not(:first-child) {
+	display: none;
+}
+
+#content1 {
+	width: 90%;
+	top: 0;
+	padding-bottom: 15px;
+	position: relative;
+	display: inline-block;
+}
+
+#content2 {
+	width: 90%;
+	border: #333;
+	text-align: center;
+	display: flex;
+	max-width: 1280px;
+	height: 400px;
+	justify-content: center;
+	position: relative;
+	
+}
+
+#content2 i {
+	top: 50%;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	position: absolute;
+	font-size: 1.2rem;
+	text-align: center;
+	line-height: 46px;
+	background: #fff;
+	border-radius: 50%;
+	transform: translateY(-50%);
+	z-index: 1000;
+}
+
+#content1 i {
+	top: 50%;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	position: absolute;
+	font-size: 1.2rem;
+	text-align: center;
+	/* color: var(--white); */
+	line-height: 46px;
+	background: var(--white);
+	border-radius: 50%;
+	transform: translateY(-50%);
+	z-index: 1000;
+}
+
+#content2 i:hover {
+	background: var(--point);
+}
+#content1 i:hover {
+	background: var(--point);
+}
+
+#content1 i:first-child {
+	left: -2%;
+}
+
+#content1 i:last-child {
+	right: -2%;
+}
+
+#content2 i:first-child {
+	left: -2%;
+}
+
+#content2 i:last-child {
+	right: -2%;
+}
+
+section #content2 .carousel {
+	cursor: pointer;
+	font-size: 0px;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+	display: flex;
+	gap: 10px;
+}
+
+section #content2 .carousel img {
+	margin-left: 14px;
+	height: 100%;
+	position: relative;
+	display: inline-block;
+}
+
+section #content2 .carousel img:first-child {
+	margin-left: 10px;
+}
+
+section #content1 .bg_image {
+	max-width: 100%;
+	max-height: 600px;
+}
+
+section #content1:hover /* 영상위에 올리면 이벤트 */ {
+	
+}
+
+section #content2 .carousel img:first-child {
+	margin-left: 10px;
+}
+
+@media(max-width:550px)
+{
+section #content2 .carousel img {
+	height: auto;
+	overflow: hidden;
+}
+
+.header {
+	display: none;
+}
+}
+
+/* 화면 작아질시 영화포스터만 출력  */
+/* @media screen and (max-width:550px) {
+   section #content2 .carousel  {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      padding-top:160px;
+      width: 100%;
+      height: auto;
+   }
+   img{width:clac(100%/10);}
+} */
