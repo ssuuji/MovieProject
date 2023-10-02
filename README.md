@@ -1,6 +1,6 @@
 # <div align="center">**MovieProject**</div>
 
-## Shoppingmall
+## CINEMA
 
 # 📌 프로젝트 소개
 + **프로젝트 명** : KG CINEMA (영화 예매 사이트)
