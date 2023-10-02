@@ -77,7 +77,7 @@
    
 ## 📌화면 설계서
 
-- ![description](https://ovenapp.io/view/jjNy7wrgx3Y581Ds6q0aJl2oNVuMVtAN/FrvOs)
+- ![화면 설계서](https://ovenapp.io/view/jjNy7wrgx3Y581Ds6q0aJl2oNVuMVtAN/FrvOs)
   
 <br/>
 
