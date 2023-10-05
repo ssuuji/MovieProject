@@ -74,12 +74,6 @@
     <li>영화 예매
     <li>마이페이지
 </ul>
-   
-## 📌화면 설계서
-
-- ![화면 설계서](https://ovenapp.io/view/jjNy7wrgx3Y581Ds6q0aJl2oNVuMVtAN/FrvOs)
-  
-<br/>
 
 ## 📌향후 업데이트 사항
 
